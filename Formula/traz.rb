@@ -4,16 +4,16 @@ class Traz < Formula
   version "0.1.0"
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/mithilgirish/traz/releases/download/v0.1.0/traz-aarch64-apple-darwin.tar.xz"
-    sha256 "64beae2de61e5137f85015722fe89914facd3e8e6da8fc816407a34cac662f6b"
+    sha256 "19e0fe2e7f0731a791f1b8ad68fb6d773a580d7396e9ca432a066fdc45c0eef2"
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/mithilgirish/traz/releases/download/v0.1.0/traz-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "71bbee15744729e37501af3a79b39f3fc55d1e9496f7cbdd4fec4da58b479c59"
+      sha256 "3fc05e9d544298b946dbc90dc3a5b2efd30f29610a4c811f1e23c2196c366b1c"
     end
     if Hardware::CPU.intel?
       url "https://github.com/mithilgirish/traz/releases/download/v0.1.0/traz-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "c2f5430de3b21ad9a466f769c8141fa08e157948ae231ea2fffe0d2ae035755a"
+      sha256 "d2cac4b3380be8e86181147562374ed82a3c0907e5da5f5b92dd5ca1585b587e"
     end
   end
   license "MIT"
